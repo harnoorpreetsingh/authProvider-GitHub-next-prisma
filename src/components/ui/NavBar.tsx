@@ -12,7 +12,7 @@ const NavBar = async () => {
   return (
     <div className=" grid grid-cols-1 sm:grid-cols-3 gap-6  mt-2 ">
       <div className="">
-        <h1 className="text-4xl sm:text-3xl font-bold">Discuss App</h1>
+        <h1 className="text-4xl sm:text-3xl font-bold">GitHub Auth</h1>
       </div>
 
       <div className="Input">
@@ -22,7 +22,7 @@ const NavBar = async () => {
       <div className="flex items-center justify-center gap-2">
         {session?.user ? (
           <>
-          <h1 className="text-sm" >Hi, {session.user.name}</h1>
+            <h1 className="text-sm">Hi, {session.user.name}</h1>
             <Avatar>
               <AvatarImage src={session.user.image || ""} alt="@shadcn" />
               <AvatarFallback>CN</AvatarFallback>
